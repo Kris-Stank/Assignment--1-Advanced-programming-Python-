@@ -9,4 +9,4 @@ elif sign == "*":
 elif sign == "-":
     print(num1 - num2)
 elif sign == "/":
-    print(num1 / num2)
+    print(num1 // num2)
