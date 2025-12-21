@@ -1,7 +1,5 @@
 ticket = input()
 sum1, sum2 = 0, 0
-part1 = ticket[:3]
-part2 = ticket[3:]
 
 for i in range(3):
     sum1 += int(ticket[i])
