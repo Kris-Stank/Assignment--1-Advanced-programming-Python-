@@ -1,10 +1,12 @@
 def all_eq(list_of_strings):
-    max_length = max(len(s) for s in list_of_strings)   
-    for i in range(len(list_of_strings)):
-        difference = max_length - len(list_of_strings[i])
-        list_of_strings[i] += ("_" * difference)
+    max_length = max(len(s) for s in list_of_strings)
+
+    new_list = []
+    for s in list_of_strings:
+        difference = max_length - len(s)
+        new_list.append(s + ("_" * difference))
     
-    return list_of_strings
+    return new_list
 
 list_of_strings = input().split()
 result = all_eq(list_of_strings)
